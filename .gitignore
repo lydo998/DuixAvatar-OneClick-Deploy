@@ -1,0 +1,16 @@
+# 运行时产物（用户自检/安装时生成）
+check-report.txt
+install.log
+
+# 系统文件
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+
+# 压缩包
+*.zip

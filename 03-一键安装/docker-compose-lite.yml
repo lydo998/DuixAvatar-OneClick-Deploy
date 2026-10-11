@@ -1,0 +1,29 @@
+# 轻量方案：仅视频生成服务（适合 8-11GB 显存）
+# 用法: docker compose -f docker-compose-lite.yml up -d
+# 注意: 此方案没有 ASR/TTS，声音克隆与语音识别功能不可用
+networks:
+  ai_network:
+    driver: bridge
+
+services:
+  duix-avatar-gen-video:
+    image: guiji2025/duix.avatar
+    container_name: duix-avatar-gen-video
+    restart: always
+    runtime: nvidia
+    privileged: true
+    volumes:
+      - d:/duix_avatar_data/face2face:/code/data
+    environment:
+      - PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:512
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+    shm_size: '8g'
+    ports:
+      - '8383:8383'
+    command: python /code/app_local.py
+    networks:
+      - ai_network

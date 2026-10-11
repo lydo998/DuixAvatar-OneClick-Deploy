@@ -1,0 +1,54 @@
+DuixAvatar-OneClick-Deploy
+Copyright (c) 2026 Lydo
+
+============================================================
+NOTICE
+============================================================
+
+This project is an UNOFFICIAL third-party deployment toolkit for the
+open-source project "Duix.Avatar".
+
+It does NOT contain, redistribute, or modify any of the Duix.Avatar
+source code, Docker images, or binary distributions. It only provides
+installation scripts, environment-checking tools, and documentation
+that automate the setup process of Duix.Avatar on Windows.
+
+Built with DUIX.COM
+
+------------------------------------------------------------
+Upstream project
+------------------------------------------------------------
+
+Duix.Avatar
+  Repository : https://github.com/duixcom/Duix.Avatar
+  Website    : https://duix.com/
+
+DUIX.COM is licensed under the DUIX.COM Community License,
+Copyright (c) DUIX.COM Platforms, Inc. All Rights Reserved.
+
+A copy of the upstream license is available at:
+  https://github.com/duixcom/Duix.Avatar/blob/main/LICENSE
+
+------------------------------------------------------------
+Third-party components
+------------------------------------------------------------
+
+The installation scripts in this repository pull the following Docker
+images at runtime. These images are NOT distributed by this project;
+they are downloaded directly from Docker Hub by the end user:
+
+  - guiji2025/duix.avatar
+  - guiji2025/fun-asr
+  - guiji2025/fish-speech-ziming
+
+All rights to these images belong to their respective owners.
+
+------------------------------------------------------------
+License of THIS project
+------------------------------------------------------------
+
+The scripts and documentation in this repository are released under
+the MIT License. See the LICENSE file for details.
+
+This project is provided "AS IS", without warranty of any kind. The
+maintainers are not affiliated with DUIX.COM or GuijiAI.
